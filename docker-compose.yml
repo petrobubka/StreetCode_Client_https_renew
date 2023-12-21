@@ -33,7 +33,7 @@ services:
 
   frontend:
     restart: always
-    image: streetcodeua/streetcode_client:${DOCKER_TAG_FRONTEND}
+    image: streetcodeua/streetcode_client:latest
     pull_policy: always
     expose:
       - "80"
@@ -52,7 +52,7 @@ services:
     
   backend:
     restart: always
-    image: streetcodeua/streetcode:${DOCKER_TAG_BACKEND}
+    image: streetcodeua/streetcode:latest
     pull_policy: always
     expose:
       - "80"
